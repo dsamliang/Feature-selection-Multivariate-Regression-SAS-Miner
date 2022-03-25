@@ -10,10 +10,13 @@
 5. Drag data partition node from sample
 6. select ratio of train, validate, and test set (60,30,10)
 7. Drag regression node from model tab
-8. Select MOdel selection, input coding, and regression type from regression node properties 
+8. Select Model selection, input coding, and regression type from regression node properties 
 9. Run Regression node and view the results 
 
 ![image](https://user-images.githubusercontent.com/98597962/160187038-cd2e88ac-7538-487a-8e4b-f8346e00bca0.png)
+
+![image](https://user-images.githubusercontent.com/98597962/160187349-ae2e8e5a-c5bd-429e-a0c1-26ad4b30e31c.png)
+
 
 
 **Results:**
