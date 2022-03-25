@@ -12,7 +12,7 @@ country_wise_latest.csv (COVID-19 Cases: https://www.kaggle.com/datasets/imdevsk
   - ![image](https://user-images.githubusercontent.com/98597962/160187038-cd2e88ac-7538-487a-8e4b-f8346e00bca0.png)
 5. Select Input features
 6. Drag data partition node from sample
-7. select ratio of train, validate, and test set (60,30,10)
+7. Select ratio of train, validate, and test set (60,30,10)
 8. Drag regression node from model tab
 9. Select Model selection, input coding, and regression type from regression node properties
   - ![image](https://user-images.githubusercontent.com/98597962/160187349-ae2e8e5a-c5bd-429e-a0c1-26ad4b30e31c.png)
