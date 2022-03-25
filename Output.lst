@@ -1,0 +1,164 @@
+*------------------------------------------------------------*
+User:                u59396733
+Date:                March 25, 2022
+Time:                18:25:34
+*------------------------------------------------------------*
+* Training Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Variable Summary
+ 
+            Measurement    Frequency
+Role           Level         Count
+ 
+INPUT        INTERVAL          2
+REJECTED     NOMINAL           1
+TARGET       INTERVAL          1
+ 
+ 
+ 
+ 
+Predicted and decision variables
+ 
+Type         Variable          Label
+ 
+TARGET       height
+PREDICTED    P_height    Predicted: height
+RESIDUAL     R_height    Residual: height
+ 
+ 
+ 
+ 
+ 
+The DMREG Procedure
+ 
+               Model Information
+ 
+Training Data Set             WORK.EM_DMREG.VIEW
+DMDB Catalog                  WORK.REG_DMDB
+Target Variable               height
+Target Measurement Level      Interval
+Error                         Normal
+Link Function                 Identity
+Number of Model Parameters    3
+Number of Observations        5
+ 
+ 
+                             Analysis of Variance
+ 
+                                   Sum of
+Source                 DF         Squares     Mean Square    F Value    Pr > F
+ 
+Model                   2       25.976434       12.988217      31.54    0.0307
+Error                   2        0.823566        0.411783
+Corrected Total         4       26.800000
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.9693     Adj R-Sq        0.9385
+AIC            -3.0177     BIC             3.4823
+SBC            -4.1894     C(p)            3.0000
+ 
+ 
+           Analysis of Maximum Likelihood Estimates
+ 
+                               Standard
+Parameter    DF    Estimate       Error    t Value    Pr > |t|
+ 
+Intercept     1     56.9029      1.5268      37.27      0.0007
+age           1     -0.0770      0.0619      -1.25      0.3391
+weight        1      0.0839      0.0168       5.00      0.0378
+
+
+*------------------------------------------------------------*
+* Score Output
+*------------------------------------------------------------*
+
+
+*------------------------------------------------------------*
+* Report Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Fit Statistics
+ 
+Target=height Target Label=' '
+ 
+   Fit
+Statistics    Statistics Label                    Train     Validation
+ 
+ _AIC_        Akaike's Information Criterion    -3.01775        .
+ _ASE_        Average Squared Error              0.16471       5.4386
+ _AVERR_      Average Error Function             0.16471       5.4386
+ _DFE_        Degrees of Freedom for Error       2.00000        .
+ _DFM_        Model Degrees of Freedom           3.00000        .
+ _DFT_        Total Degrees of Freedom           5.00000        .
+ _DIV_        Divisor for ASE                    5.00000       2.0000
+ _ERR_        Error Function                     0.82357      10.8771
+ _FPE_        Final Prediction Error             0.65885        .
+ _MAX_        Maximum Absolute Error             0.63963       2.6701
+ _MSE_        Mean Square Error                  0.41178       5.4386
+ _NOBS_       Sum of Frequencies                 5.00000       2.0000
+ _NW_         Number of Estimate Weights         3.00000        .
+ _RASE_       Root Average Sum of Squares        0.40585       2.3321
+ _RFPE_       Root Final Prediction Error        0.81170        .
+ _RMSE_       Root Mean Squared Error            0.64170       2.3321
+ _SBC_        Schwarz's Bayesian Criterion      -4.18943        .
+ _SSE_        Sum of Squared Errors              0.82357      10.8771
+ _SUMW_       Sum of Case Weights Times Freq     5.00000       2.0000
+ 
+ 
+ 
+ 
+Assessment Score Rankings
+ 
+Data Role=TRAIN Target Variable=height Target Label=' '
+ 
+           Number of      Mean        Mean
+Depth    Observations    Target    Predicted
+ 
+   5           1           72       71.6673
+  25           1           70       70.6396
+  45           1           69       68.4728
+  65           1           68       68.1386
+  85           1           65       65.0816
+ 
+ 
+Data Role=VALIDATE Target Variable=height Target Label=' '
+ 
+           Number of      Mean        Mean
+Depth    Observations    Target    Predicted
+ 
+   5           1           63       64.9358
+  55           1           61       63.6701
+ 
+ 
+ 
+ 
+Assessment Score Distribution
+ 
+Data Role=TRAIN Target Variable=height Target Label=' '
+ 
+   Range for         Mean        Mean        Number of      Model
+   Predicted        Target    Predicted    Observations     Score
+ 
+71.338 -  71.667      72       71.6673           1         71.5027
+70.350 -  70.679      70       70.6396           1         70.5148
+68.374 -  68.704      69       68.4728           1         68.5391
+68.045 -  68.374      68       68.1386           1         68.2098
+65.082 -  65.411      65       65.0816           1         65.2463
+ 
+ 
+Data Role=VALIDATE Target Variable=height Target Label=' '
+ 
+   Range for         Mean        Mean        Number of      Model
+   Predicted        Target    Predicted    Observations     Score
+ 
+64.873 -  64.936      63       64.9358           1         64.9042
+63.670 -  63.733      61       63.6701           1         63.7018
